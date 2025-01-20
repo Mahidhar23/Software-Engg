@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quadratic Plotter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Quadratic Plotter</h1>
+        <img src="plotter-banner.jpg" alt="Quadratic Plotter Banner" class="banner">
+        
+        <div class="input-row">
+            <div>
+                <label for="a1">a1:</label>
+                <input type="number" id="a1" value="1">
+            </div>
+            <div>
+                <label for="b1">b1:</label>
+                <input type="number" id="b1" value="2">
+            </div>
+            <div>
+                <label for="c1">c1:</label>
+                <input type="number" id="c1" value="3">
+            </div>
+        </div>
+        
+        <div class="input-row">
+            <div>
+                <label for="a2">a2:</label>
+                <input type="number" id="a2" value="2">
+            </div>
+            <div>
+                <label for="b2">b2:</label>
+                <input type="number" id="b2" value="-1">
+            </div>
+            <div>
+                <label for="c2">c2:</label>
+                <input type="number" id="c2" value="1">
+            </div>
+        </div>
+        
+        <div class="input-row">
+            <div>
+                <label for="a3">a3:</label>
+                <input type="number" id="a3" value="-1">
+            </div>
+            <div>
+                <label for="b3">b3:</label>
+                <input type="number" id="b3" value="3">
+            </div>
+            <div>
+                <label for="c3">c3:</label>
+                <input type="number" id="c3" value="-2">
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button onclick="plotGraph()">Plot Graph</button>
+        </div>
+
+        <div id="chart" class="chart-container"></div>
+    </div>
+</body>
+</html>
